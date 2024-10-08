@@ -219,7 +219,7 @@ $calendar = new Calendar(new DateTime('2024-01-01'));
 $newCalendar = clone $calendar;
 
 echo $newCalendar->getDate()->modify('+1 year')->format('Y');
-echo $calendar->getDate()->modify('+1 year')->format('Y');
+echo $calendar->getDate()->format('Y');
 ```
 Вопрос. Какие 2 года выведет скрипт `temporary.php` и почему оба 2025 ?
 
